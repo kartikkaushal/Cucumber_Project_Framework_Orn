@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-07T07:52:43 IST" name="Suite" finished-at="2025-02-07T07:53:17 IST" duration-ms="33772">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.nttdata.test_runner.RunTest@55cb6996]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-02-07T07:52:43 IST" name="OrionTest" finished-at="2025-02-07T07:53:17 IST" duration-ms="33772">
+      <class name="com.nttdata.test_runner.RunTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.nttdata.test_runner.RunTest@55cb6996]" started-at="2025-02-07T07:52:43 IST" name="setUpClass" finished-at="2025-02-07T07:52:43 IST" duration-ms="341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1984212d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setupTestBase(java.lang.String)[pri:0, instance:com.nttdata.test_runner.RunTest@55cb6996]" started-at="2025-02-07T07:52:43 IST" name="setupTestBase" finished-at="2025-02-07T07:52:47 IST" duration-ms="3715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestBase -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.nttdata.test_runner.RunTest@55cb6996]" started-at="2025-02-07T07:52:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-07T07:53:17 IST" duration-ms="29679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["GBOJ Orion E2E proposal submission"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["GreatBundleOfJoy Proposal Submission"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.nttdata.test_runner.RunTest@55cb6996]" started-at="2025-02-07T07:53:17 IST" name="tearDownClass" finished-at="2025-02-07T07:53:17 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.nttdata.test_runner.RunTest -->
+    </test> <!-- OrionTest -->
+  </suite> <!-- Suite -->
+</testng-results>
