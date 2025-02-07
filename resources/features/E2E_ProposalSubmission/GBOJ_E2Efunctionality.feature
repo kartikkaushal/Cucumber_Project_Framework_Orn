@@ -21,9 +21,9 @@ Feature: GreatBundleOfJoy Proposal Submission
   I want to use this template for my feature file
 
   @GBOJ
-  Scenario: GBOJ Orion E2E proposal submission
+  Scenario Outline: GBOJ Orion E2E proposal submission
     Given User launches GBOJ Application URL
     
-    Examples:
+  	Examples:
     |TestCaseID|
     |TC001|
