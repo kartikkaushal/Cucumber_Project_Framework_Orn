@@ -26,7 +26,7 @@
 					<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<!--<version>3.6.2</version>-->
+					<version>3.6.2</version>
 					<configuration>
 						<verbose>true</verbose>
 						<fork>true</fork>
@@ -67,12 +67,6 @@ https://mvnrepository.com/artifact/org.apache.maven.plugins/properties-maven-plu
 					<version>3.0.0-M4</version>
 					<configuration>
 						<testFailureIgnore>true</testFailureIgnore>
-						 <includes>
-                    		<include>**/*Test.java</include>
-              			 </includes>
-               			 <dependenciesToScan>
-                    		<dependency>org.testng:testng</dependency>
-                		</dependenciesToScan>
 						<!--
 <systemPropertyVariables><basefolder.name>Reports/AutomationReport/GSPE</basefolder.name><basefolder.datetimepattern>dd-MMM-YY_HH-mm-ss</basefolder.datetimepattern><extent.reporter.spark.start>true</extent.reporter.spark.start><extent.reporter.spark.out>TCID-${timestamp}.html</extent.reporter.spark.out><screenshot.dir>Screenshot/</screenshot.dir><extent.reporter.spark.base64imagesrc>true</extent.reporter.spark.base64imagesrc></systemPropertyVariables>  -->
 					</configuration>
@@ -372,6 +366,7 @@ https://mvnrepository.com/artifact/org.apache.maven.plugins/properties-maven-plu
     		<groupId>org.testng</groupId>
     		<artifactId>testng</artifactId>
     		<version>7.7.1</version>
+    		<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/messages -->
 		<dependency>
