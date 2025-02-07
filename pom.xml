@@ -11,13 +11,22 @@
 		<maven.build.timestamp.format>yyyy_MM_dd_HH_mm_ss</maven.build.timestamp.format>
 	</properties>
 	<build>
-		<sourceDirectory>src</sourceDirectory>
+		<!--<sourceDirectory>src</sourceDirectory>
 		<resources>
 			<resource>
 				<directory>src</directory>
 				<excludes>
 					<exclude>**/*.java</exclude>
 				</excludes>
+			</resource>
+		</resources>-->
+		<sourceDirectory>src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>resources/features/E2E_ProposalSubmission/</directory>
+				<!--<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>-->
 			</resource>
 		</resources>
 		<pluginManagement>
@@ -37,6 +46,21 @@
 						<encoding>UTF-8</encoding>
 					</configuration>
 				</plugin>
+				
+				<plugin>
+					<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>2.6</version>
+					<configuration>
+						<resources>
+							<resource>
+								<directory>resources</directory>
+							</resource>
+						</resources>
+					</configuration>
+				</plugin>
+				
 				<!--  	 <plugin>
 https://mvnrepository.com/artifact/org.apache.maven.plugins/properties-maven-plugin -->
 				<!-- 	<groupId>org.codehaus.mojo</groupId><artifactId>properties-maven-plugin</artifactId><version>1.1.0</version><executions><execution><phase>initialize</phase><goals><goal>read-project-properties</goal></goals></execution></executions><configuration><files><file>test.properties</file></files></configuration></plugin> -->
