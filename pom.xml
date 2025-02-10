@@ -35,11 +35,10 @@
 					<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.1</version>
 					<configuration>
-						<verbose>true</verbose>
+						<!--<verbose>true</verbose>
 						<fork>true</fork>
-						<executable>${JAVA_HOME}/bin/javac</executable>
+						<executable>${JAVA_HOME}/bin/javac</executable>-->
 						<source>1.8</source>
 						<target>1.8</target>
 						<encoding>UTF-8</encoding>
@@ -340,11 +339,11 @@ https://mvnrepository.com/artifact/org.apache.maven.plugins/properties-maven-plu
 		<!-- <dependency><groupId>mysql</groupId><artifactId>mysql-connector-java</ar
 
 <version>8.0.19</version></dependency> -->
-		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok - CHANGED-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.12</version>
+			<version>1.18.20</version>
 			<scope>provided</scope>
 		</dependency>
 		<!--https://mvnrepository.com/artifact/io.cucumber/cucumber-junit-->
